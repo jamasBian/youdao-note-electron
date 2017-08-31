@@ -9,9 +9,9 @@ Mac OS X 和 Linux 下更好用的有道云笔记客户端。使用Electron构�
 
 ```bash
 # Clone this repository
-git clone https://github.com/jamasBian/DingTalk-linux.git
+git clone https://github.com/jamasBian/youdao-note-electron.git
 # Go into the repository
-cd DingTalk-linux
+cd youdao-note-electron
 # Install dependencies and run the app
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install && npm start

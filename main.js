@@ -13,13 +13,14 @@ let mainWindow;
 function createWindow () {
   // Create the browser window.
   const path = require('path');
-  const imgPath = path.join(process.resourcesPath, '/app/assets/icon.png')
+  const imgPath = path.join(process.resourcesPath, '/icon.png')
   mainWindow = new BrowserWindow({icon: imgPath});
-  
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
-  //mainWindow.webContents.openDevTools();
+  mainWindow.loadURL('https://note.youdao.com/web');
+  mainWindow.setIcon(imgPath);
+  console.log(imgPath);
+  mainWindow.webContents.openDevTools();
   mainWindow.maximize();
   
   
