@@ -17,7 +17,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({icon: imgPath});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://note.youdao.com/web');
+  mainWindow.loadURL('file://' + __dirname + '/index.html');
   mainWindow.setIcon(imgPath);
   console.log(imgPath);
   mainWindow.webContents.openDevTools();

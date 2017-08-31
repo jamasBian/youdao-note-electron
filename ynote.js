@@ -1,6 +1,8 @@
 const shell = require('electron').shell;
 
-const injectCSS = ``;
+const injectCSS = `div#layout-main{width:100%;flex:0 1 auto;height:100%}
+div#layout-container{width:100%;height:100%}
+div#body{height:100%}`;
 
 function getParameterByName(url, name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

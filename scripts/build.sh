@@ -34,6 +34,7 @@ fi
 ignore_list="dist|scripts|\.idea|.*\.md|.*\.yml|node_modules/nodejieba"
 cp assets/$ICON node_modules/electron/dist/resources/$ICON
 electron-packager . "${APP_NAME}" --platform=$PLATFORM --arch=$ARCH --electronVersion=1.4.15 --app-version=0.0.5 --asar --icon=assets/$ICON --overwrite --out=./dist --ignore=${ignore_list}
+cp assets/$ICON dist/${APP_NAME}-$PLATFORM-$ARCH/resources/
 
 if [ $? -eq 0 ]; then
   echo -e "$(tput setaf 2)Packaging for $PLATFORM $ARCH succeeded.$(tput sgr0)\n"

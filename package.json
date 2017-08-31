@@ -1,7 +1,7 @@
 {
-  "name": "DingTalk-Electron",
-  "version": "0.0.0",
-  "description": "A Electron application for DingTalk",
+  "name": "Youdao-Note-Electron",
+  "version": "1.0.0",
+  "description": "An Electron application for Youdao-Note",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
@@ -17,20 +17,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamasBian/DingTalk-linux.git"
+    "url": "git+https://github.com/jamasBian/youdao-note-electron.git"
   },
   "keywords": [
-    "Electron",
-    "DingTalk",
-    "钉钉",
+    "Youdao",
+    "Note",
+    "有道云笔记",
     "Web"
   ],
   "author": "Zhiqiang Bian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jamasBian/DingTalk-linux/issues"
+    "url": "https://github.com/jamasBian/youdao-note-electron/issues"
   },
-  "homepage": "https://github.com/jamasBian/DingTalk-linux",
+  "homepage": "https://github.com/jamasBian/youdao-note-electron",
   "dependencies": {
     "electron": "1.4.15",
     "electron-packager": "^8.5.1"
