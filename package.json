@@ -1,0 +1,38 @@
+{
+  "name": "DingTalk-Electron",
+  "version": "0.0.0",
+  "description": "A Electron application for DingTalk",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "./scripts/build-all.sh",
+    "build:osx": "./scripts/build.sh darwin x64",
+    "build:osx64": "./scripts/build.sh darwin x64",
+    "build:linux32": "./scripts/build.sh linux ia32",
+    "build:linux": "./scripts/build.sh linux x64",
+    "build:linux64": "./scripts/build.sh linux x64",
+    "build:win": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win32": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win64": ".\\scripts\\build-win32.bat win32 x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamasBian/DingTalk-linux.git"
+  },
+  "keywords": [
+    "Electron",
+    "DingTalk",
+    "钉钉",
+    "Web"
+  ],
+  "author": "Zhiqiang Bian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamasBian/DingTalk-linux/issues"
+  },
+  "homepage": "https://github.com/jamasBian/DingTalk-linux",
+  "dependencies": {
+    "electron": "1.4.15",
+    "electron-packager": "^8.5.1"
+  }
+}
