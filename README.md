@@ -25,6 +25,8 @@ npm run build:linux
 npm run build:win
 ```
 
+## 下载已经打包好的应用
+[有道云笔记-Electron Linux 64位版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.0.0/Youdao-Note-Electron-linux-x64.zip)
 
 
 #### License [CC0 (Public Domain)](LICENSE.md)
