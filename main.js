@@ -19,8 +19,6 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
   mainWindow.setIcon(imgPath);
-  console.log(imgPath);
-  mainWindow.webContents.openDevTools();
   mainWindow.maximize();
   
   
