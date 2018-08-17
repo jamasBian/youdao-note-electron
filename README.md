@@ -14,7 +14,9 @@ git clone https://github.com/jamasBian/youdao-note-electron.git
 cd youdao-note-electron
 # Install dependencies and run the app
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm install && npm start
+cnpm install 
+cp ./assets/icon.png ./node_modules/_electron@1.4.15@electron/dist/resources/
+npm start
 ```
 
 ## 根据你的平台打包应用
@@ -28,5 +30,6 @@ npm run build:win
 ## 下载已经打包好的应用
 [有道云笔记-Electron Linux 64位版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.0.0/Youdao-Note-Electron-linux-x64.zip)
 
-
+## 解决图标的问题。
+cp ./assets/icon.png ./node_modules/_electron@1.4.15@electron/dist/resources/
 #### License [CC0 (Public Domain)](LICENSE.md)
