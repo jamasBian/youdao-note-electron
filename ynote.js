@@ -11,6 +11,30 @@ function getParameterByName(url, name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+newWindow =function (e) {
+  e.defaultPrevented = true;
+  var url = getParameterByName(e.url, 'requrl');
+  if (url.length > 1) {
+    //shell.openExternal(url);
+    if(url.indexOf("succ.html")>=0)
+      webview.loadURL("https://note.youdao.com/web/")
+    else
+      webview.loadURL(url);
+  } else {
+    //shell.openExternal(e.url);
+    if(e.url.indexOf("succ.html")>=0)
+      webview.loadURL("https://note.youdao.com/web/")
+    else
+      webview.loadURL(e.url);
+  }
+};
+
+checkUrl =function (e) {
+  console.log(e.url)
+  if(e.url.indexOf("succ.html")>=0)
+    webview.loadURL("https://note.youdao.com/web/")
+};
+
 onload = function () {
   var webview = document.getElementById("webview");
   webview.addEventListener('dom-ready', function () {
@@ -22,17 +46,9 @@ onload = function () {
     webview.insertCSS(injectCSS);
     // inject js to trigger if there is new message in.
     // webview.executeJavaScript('injectJS.getBadge()');
+    webview.addEventListener('new-window', newWindow);
+    webview.addEventListener('did-navigate', checkUrl);
   });
 
-  webview.addEventListener('new-window', function (e) {
-    e.defaultPrevented = true;
-    var url = getParameterByName(e.url, 'requrl');
-    if (url.length > 1) {
-      //shell.openExternal(url);
-      webview.loadURL(url);
-    } else {
-      //shell.openExternal(e.url);
-      webview.loadURL(e.url);
-    }
-  })
+  
 };
