@@ -1,6 +1,6 @@
-<img src="assets/icon.png" alt="logo" height="64" align="right" />
 # youdao-note-electron（有道云笔记Linux版）
-Mac OS X 和 Linux 下更好用的有道云笔记客户端。使用Electron构建。
+
+Mac OS X 和 Linux 下更好用的有道云笔记客户端。使用Electron构建。<img src="assets/icon.png" alt="logo" height="64" align="right" />
 
 ## 下载
 
