@@ -30,6 +30,8 @@ npm run build:win
 ## 下载已经打包好的应用
 [有道云笔记-Electron Linux 64位版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.1.1/Youdao-Note-Electron-linux-x64.zip)
 
+[有道云笔记-Electron MacOSX 版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.1.1/Youdao-Note-Electron-darwin-x64.zip)
+
 ## 解决图标的问题。
 cp ./assets/icon.png ./node_modules/_electron@1.4.15@electron/dist/resources/
 #### License [CC0 (Public Domain)](LICENSE.md)
