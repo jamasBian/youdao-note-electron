@@ -1,6 +1,6 @@
-<img src="assets/icon.png" alt="logo" height="64" align="right" />
 # youdao-note-electron（有道云笔记Linux版）
-Mac OS X 和 Linux 下更好用的有道云笔记客户端。使用Electron构建。
+
+Mac OS X 和 Linux 下更好用的有道云笔记客户端。使用Electron构建。<img src="assets/icon.png" alt="logo" height="64" align="right" />
 
 ## 下载
 
@@ -28,8 +28,10 @@ npm run build:win
 ```
 
 ## 下载已经打包好的应用
-[有道云笔记-Electron Linux 64位版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.0.0/Youdao-Note-Electron-linux-x64.zip)
+[有道云笔记-Electron Linux 64位版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.1.1/Youdao-Note-Electron-linux-x64.zip)
+
+[有道云笔记-Electron MacOSX 版本](https://github.com/jamasBian/youdao-note-electron/releases/download/1.1.1/Youdao-Note-Electron-darwin-x64.zip)
 
 ## 解决图标的问题。
-cp ./assets/icon.png ./node_modules/_electron@1.4.15@electron/dist/resources/
+cp ./assets/icon.png ./node_modules/_electron@4.1.1@electron/dist/resources/
 #### License [CC0 (Public Domain)](LICENSE.md)
