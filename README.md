@@ -15,7 +15,7 @@ cd youdao-note-electron
 # Install dependencies and run the app
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install 
-cp ./assets/icon.png ./node_modules/_electron@1.4.15@electron/dist/resources/
+cp ./assets/icon.png ./node_modules/_electron@4.1.1@electron/dist/resources/
 npm start
 ```
 

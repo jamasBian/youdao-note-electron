@@ -25,11 +25,14 @@ onload = function () {
   });
 
   webview.addEventListener('new-window', function (e) {
+    e.defaultPrevented = true;
     var url = getParameterByName(e.url, 'requrl');
     if (url.length > 1) {
-      shell.openExternal(url);
+      //shell.openExternal(url);
+      webview.loadURL(url);
     } else {
-      shell.openExternal(e.url);
+      //shell.openExternal(e.url);
+      webview.loadURL(e.url);
     }
   })
 };
