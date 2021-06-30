@@ -13,7 +13,8 @@ let mainWindow;
 function createWindow () {
   // Create the browser window.
   const path = require('path');
-  const imgPath = path.join(process.resourcesPath, '/icon.png')
+  // const imgPath = path.join(process.resourcesPath, path.sep,'icon.png')
+  const imgPath = path.join(__dirname,'assets', path.sep,'icon.png')
   mainWindow = new BrowserWindow({icon: imgPath});
 
   // and load the index.html of the app.
